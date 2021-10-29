@@ -1,0 +1,18 @@
+/*
+	El rincon del Sabor
+
+	Estilos GENERALES
+	_________________________
+*/
+
+/* wrapper y desenfoque */
+.wrapper, .desenfoque{
+	background:  none;
+}
+
+.redes{
+  background: #000;
+}
+
+/* fomulari de contcto */
+.btn{background: #000};

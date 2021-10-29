@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inicio | El rincon del sabor</title>
+	<meta name="description" content="Aqui encontraras informacion sobre El Rincon del Sabor">
+	<meta name="keywords" content="El Rincon del Sabor, restaurante, comidas, bebidas, bufet, Villanueva Honduras, microempresa2021">
+	<link rel="shortcut icon" href="recursos/favicon.jpeg" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/estilosGenerales.css">
+	<link rel="stylesheet" href="css/estilosIndex.css">
+</head>
+<body>
+	<div class="loderDesen loader position-fixed d-flex-center w-100 h-100 top-0 lef-0 rigth-0">
+		<div class="contener_general"> <div class="contener_mixte"><div class="ballcolor ball_1">&nbsp;</div></div> <div class="contener_mixte"><div class="ballcolor ball_2">&nbsp;</div></div> <div class="contener_mixte"><div class="ballcolor ball_3">&nbsp;</div></div> <div class="contener_mixte"><div class="ballcolor ball_4">&nbsp;</div></div> </div>
+	</div>
+
+	<main>
+		<section class="wrapper w-100 container-fluit bg-secondary">
+			<div class="desenfoque container-fluit w-100 h-100">
+				<div id="navBar">
+					<nav class="navbar navbar-expand-lg navbar-light p-3 w-100">
+						<div class="container-fluit">
+							<a href="index.html" class="navbar-brand text-white ms-5 fs-6">Inicio</a>
+						</div>
+
+						<button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					      <i class="fas fa-bars text-white"></i>
+					    </button>
+
+					    <div class="collapse navbar-collapse text-start" id="navbarNav">
+					    	<ul class="navbar-nav">
+					    		<li class="nav-item m-2 text-white-50 fs-6">
+					    			<a class="m-2 nav-link text-secondary p-2" href="sobreNosotros.html">Sobre nosotros</a>
+					    		</li>
+
+					    		<li class="nav-item m-2 text-white-50 fs-6">
+					    			<a class="m-2 nav-link text-secondary p-2" href="contacto.html">Contacto</a>
+					    		</li>
+
+					    		<li class="nav-item m-2 text-white-50 fs-6">
+					    			<a class="m-2 nav-link text-white colorbg-dark border border-white p-2" href="https://microempresa2021.groovekart.com/" target="_blank">Tienda Online</a>
+					    		</li>
+					    	</ul>
+					    </div>
+					</nav>
+				</div>
+
+				<div class="bienvenida container-fluit d-flex w-100">
+					<article id="msgBienvenda" class="w-bienvenida m-3 text-white d-flex-center">
+						<h2 class="mb-3 fw-bold">Bienvenido!!!</h2>
+
+						<p class="text-center">
+							Siempre procuramos dar lo mejor de nosotros, te lo demostramos en la calidad  y en el compromiso al servirte los platillos que deseas... 
+						</p>
+
+						<i class="fas fa-utensils mt-3 fs-1 border border-white p-3"></i>
+					</article>
+
+					<article id="logo" class="w-logo mt-5">
+						<img src="recursos/logo.png" class="d-block m-auto" width="600" alt="">
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="msg">
+			<div id="msgTac" class="mt-5 mb-5">
+				<div class="w-100 h-100 d-flex-center">
+					<article class="content w-75">
+						<h2 class="text-white">Contamos con una gran variedad de platos dentro de nuetro menu...</h2>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="mapa" class="mb-5">
+			<div>
+				<div class="m-5">
+					<h2>Nuestra ubicacion</h2>
+
+					<p>
+						Buscanos en el mapa para que puedas visitarnos, nosotros te estaremos esperando!!!
+					</p>
+				</div>
+
+				<div class="m-1">
+					<div id="mapid"></div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="w-100 pb-3 text-white mt-5">
+			<div class="w-100 d-flex flex-wrap">
+				<div class="footer-item d-flex-center">
+					<span>Lunes - Viernes: 8am - 5pm</span>
+				</div>
+
+				<div class="footer-item d-flex-center">
+					<span>Villanueva Cortes</span>
+				</div>
+
+				<div class="footer-item d-flex-center">
+					<span class="title-redes">Visita nuestras redes sociales</span>
+					<div class="mt-3">
+						<a  href="https://www.facebook.com/Microempresas-2021-102542172224270/" target="_blank"><i class="fab fa-facebook-square fs-3 m-1 text-white text-decoration-none"></i></a>
+						<a href="https://www.instagram.com/microempresas2021/?utm_medium=copy_link&fbclid=IwAR0ihAUEx9pAcFZr1rVnhM0qxOtgl_mcJArawUj17SIPlrSAHRiv4aP7PKk" target="_blank"><i class="fab fa-instagram-square fs-3 m-1 text-white text-decoration-none"></i></a>
+						<a href="https://twitter.com/Microempresas21?t=q0CaMrvms_kc9US_ss7uOA&s=09&fbclid=IwAR0nYz24XqVqLN0CNphClXAzT69nLLFMSd7hK5ukBNWJrnUmacwJL8PhALk" target="_blank"><i class="fab fa-twitter-square fs-3 m-1 text-white text-decoration-none"></i></a>	
+						<a href="https://www.youtube.com/channel/UC-0V-rki7DYz3UVr3Dzbw7A" target="_blank"><i class="fab fa-youtube-square fs-3 m-1 text-white text-decoration-none"></i></a>				
+					</div>
+				</div>
+			</div>
+
+			<div class="autor w-100 text-center mt-2">
+				<span>&copy;2021 El rincon del sabor</span>
+			</div>
+		</footer>
+	</main>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/*
+	El rincon del Sabor
+
+	Estilos personalizados(Sobre nosotros) 
+	______________________
+*/
+
+/* wrapper */
+.wrapper, .desenfoque{
+	background:  none;
+}
+
+/* vision */
+#vision, #mision, #msgSlider{
+	background: #000;
+	width: 100%;
+	height: auto;
+}
+
+/* Visoion/mision */
+#vision > div, #mision > div, #msgSlider > div{
+	width: 50%;
+	margin: 80px;
+}
+
+/* barras de imagenes */
+.desenfoque-barr-img{background: #1a1616d9;}
+
+/* Fondo Vis */
+#fondo-vis{
+	width: 100vh;
+	height: 80vh;
+	background-image: url(../recursos/247693766_266755998566032_6828712747657580417_n.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#fondo-mis{
+	height: 80vh;
+	background-image: url(../recursos/247576896_394963745499077_840610658930081424_n.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/* carousel */
+#carousel{height: 100vh}
+#carousel img{
+	height: 100vh;
+	box-shadow: 3px 2px 10px #000;
+	border-radius: 5px;
+}
+
+.glider-prev, .glider-next{top: 40%}
+
+/* DISPOSITIVOS MOVILES */
+
+@media (max-width:  800px){
+
+	#vision, #mision{height: 80vh;}
+	#vision > div, #mision > div, #msgSlider > div{width:  100%;}
+
+	#carousel img{height: 70vh}
+	.glider-prev, .glider-next{top: 35%;}
+}

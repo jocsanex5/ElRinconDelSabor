@@ -1,0 +1,73 @@
+/*
+	El rincon del Sabor
+
+	Estilos GENERALES
+	_________________________
+*/
+
+*{
+	margin: auto;
+	padding: auto;
+}
+
+body{font-family: 'Open Sans', sans-serif;}
+
+/* contenedor principal */
+.wrapper{
+	width: 100%;
+	margin-top: 100px;
+}
+
+
+/* Desenfoque del fondo */
+.desenfoque, .transparent{background: #1a1616d9; padding: 40px;}
+.loderDesen{background: #080303d9;}
+
+/* nav bar */
+#navBar nav{
+	background: #301a1a; 
+	z-index: 1000;
+	position: fixed; top: 0; left: 0;
+}
+
+/* pie de pagina */
+footer{background: #000;}
+
+.footer-item{width: 33%; font-size: 15px; padding: 20px;}
+.title-redes{font-size: 18px;}
+.autor{font-size: 13px; font-style: oblique;}
+
+/* Mapa */
+#mapa{
+	width: 100%;
+	height: 500px;
+}
+
+/*
+	CONTENEDOR CENTRADO
+*/
+
+.d-flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* 
+	COLORES PERSONALIZADOS
+*/
+
+.colorbg-dark{background: #000;}
+
+@media (max-width:  800px){
+
+	.footer-item{width: 100%;}
+	.wrapper{margin-top:  30px}
+}
+
+/* loader */
+.loader{
+	z-index: 2000;
+}
+.contener_general{-webkit-animation:animball_two 1s infinite;-moz-animation:animball_two 1s infinite;-ms-animation:animball_two 1s infinite;animation:animball_two 1s infinite;width:44px;height:44px} .contener_mixte{width:44px;height:44px;position:fixed} .ballcolor{width:20px;height:20px;border-radius:50%} .ball_1, .ball_2, .ball_3, .ball_4{position:absolute;-webkit-animation:animball_one 1s infinite ease;-moz-animation:animball_one 1s infinite ease;-ms-animation:animball_one 1s infinite ease;animation:animball_one 1s infinite ease} .ball_1{background-color:#301A1A;top:0;left:0} .ball_2{background-color:#FFFFFF;top:0;left:24px} .ball_3{background-color:#FFFFFF;top:24px;left:0} .ball_4{background-color:#301A1A;top:24px;left:24px} @-webkit-keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @-moz-keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @-ms-keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @-webkit-keyframes animball_two{0%{-webkit-transform:rotate(0deg) scale(1)} 50%{-webkit-transform:rotate(360deg) scale(1.2)} 100%{-webkit-transform:rotate(720deg) scale(1)}} @-moz-keyframes animball_two{0%{-moz-transform:rotate(0deg) scale(1)} 50%{-moz-transform:rotate(360deg) scale(1.3)} 100%{-moz-transform:rotate(720deg) scale(1)}} @-ms-keyframes animball_two{0%{-ms-transform:rotate(0deg) scale(1)} 50%{-ms-transform:rotate(360deg) scale(1.3)} 100%{-ms-transform:rotate(720deg) scale(1)}}
